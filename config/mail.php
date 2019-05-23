@@ -56,12 +56,12 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => env('MAIL_FROM_ADDRESS', 'peterparkerstark33@gmail.com'),
+        'name' => env('MAIL_FROM_NAME','APP_NAME'),
     ],
 
     /*
-    |--------------------------------------------------------------------------
+    |-----------------------------------------------------  ---------------------
     | E-Mail Encryption Protocol
     |--------------------------------------------------------------------------
     |
@@ -120,4 +120,11 @@ return [
         ],
     ],
 
+    'stream' => [
+            'ssl' => [
+                'allow_self_signed' => true,
+                'verify_peer' => false,
+                'verify_peer_name' => false,
+            ],
+        ],
 ];
